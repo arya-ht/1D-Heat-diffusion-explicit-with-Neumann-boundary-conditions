@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <math.h>
 #include <stdbool.h>
-#define string.h
 #define n 1
 #define D 1.0
 #define tMAX 10
@@ -17,7 +16,7 @@ int tstep = (double)tMAX / dt + 1;
 double F(double, double);
 void U0(double u[tstep][xstep]);
 void Boundary(double u[tstep][xstep], int tRow);
-void fill(double[tstep][xstep], int);
+void fill(double u[tstep][xstep], int);
 void print(double u[tstep][xstep] );
 double exact(double, double);
 void Explicit();
